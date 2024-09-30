@@ -1,0 +1,61 @@
+.footer_container {
+  padding: 2rem 6rem;
+  background-color: #ccc;
+}
+
+.product_name {
+}
+
+.book_name {
+  font-size: 1.2rem;
+  padding: 2rem;
+  line-height: 2;
+  font-family: var(--font-family-1);
+  text-decoration: none;
+  color: #303030;
+  font-weight: 700;
+}
+
+.book_name:first-child {
+  padding-left: 0;
+}
+
+.about_text {
+  margin: 4rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: var(--font-family-1);
+}
+
+.navBranding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navBranding a {
+  text-decoration: none;
+  color: #303030;
+}
+
+.navBranding img {
+  width: 8rem;
+  /* height: 50px; */
+}
+
+.navBranding h3 {
+  font-size: 1.8rem;
+  font-weight: bold !important;
+  font-family: var(--font-family-1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.copyright {
+  padding: 2rem 4rem;
+  text-align: center;
+  background-color: #303030;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
