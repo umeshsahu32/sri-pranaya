@@ -1,0 +1,45 @@
+.servicesContainer {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f2f2f2;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  gap: 10px;
+}
+
+.serviceItem img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.serviceItem h4 {
+  font-size: 1.2rem;
+  color: #222221;
+}
+
+.serviceItem p {
+  font-size: 1rem;
+  color: #555252;
+  line-height: 1.4;
+}

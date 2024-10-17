@@ -1,0 +1,23 @@
+.mainHeading {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  margin-bottom: 0;
+}
+
+.mainHeading h3 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  color: #222121;
+}
+
+.mainHeading p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #555252;
+}

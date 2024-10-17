@@ -1,0 +1,45 @@
+.valuesContainer {
+  max-width: 1200px;
+  margin: 8rem auto;
+  padding: 0 4rem;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 4rem;
+  color: #222221;
+  margin-bottom: 3rem;
+}
+
+.valueContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valueCard {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  min-width: 24%;
+  max-width: 24%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.valueCard p:first-child {
+  font-size: 2.6rem;
+  color: rgb(100, 89, 85);
+  text-align: center;
+}
+
+.valueCard p:last-child {
+  font-size: 1.2rem;
+  color: rgb(100, 89, 85);
+  text-align: center;
+}
