@@ -12,6 +12,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+<<<<<<< HEAD
+  margin-top: 4rem;
+=======
+>>>>>>> 90eee29a6a1b6e7413042279bf771422d114ce7d
 }
 
 .serviceItem {

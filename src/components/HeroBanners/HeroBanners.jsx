@@ -1,5 +1,22 @@
 import React, { useState, useEffect } from "react";
 import styles from "./HeroBanners.module.css";
+<<<<<<< HEAD
+import banner1 from "../../assets/banners/banner1.avif";
+import banner2 from "../../assets/banners/banner2.avif";
+import banner3 from "../../assets/banners/banner3.avif";
+
+const slides = [
+  {
+    image: banner1,
+    text: "Welcome to our website",
+  },
+  {
+    image: banner2,
+    text: "Discover amazing products",
+  },
+  {
+    image: banner3,
+=======
 
 const slides = [
   {
@@ -15,6 +32,7 @@ const slides = [
   {
     image:
       "https://images.unsplash.com/photo-1728567409684-e42ba81a3c34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+>>>>>>> 90eee29a6a1b6e7413042279bf771422d114ce7d
     text: "Join our community today",
   },
 ];
