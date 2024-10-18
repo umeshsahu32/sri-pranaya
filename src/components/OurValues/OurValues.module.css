@@ -12,9 +12,8 @@
 }
 
 .valueContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -25,8 +24,6 @@
   justify-content: center;
   align-items: center;
   background-color: var(--bg-header);
-  min-width: 24%;
-  max-width: 24%;
   border: 1px solid var(--input-border);
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -43,4 +40,16 @@
   font-size: 1.2rem;
   color: var(--secondary-text);
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .valueContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 628px) {
+  .valueContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

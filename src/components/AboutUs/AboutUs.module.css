@@ -13,9 +13,9 @@
 }
 
 .sectionContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
   gap: 12rem;
 }
 
@@ -54,8 +54,12 @@
   color: var(--secondary-text);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .sectionContainer {
-    gap: 6rem;
+    grid-template-columns: 1fr;
+  }
+
+  .sectionImage {
+    order: 2;
   }
 }

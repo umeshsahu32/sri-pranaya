@@ -6,7 +6,7 @@ import { keyFeaturesList } from "../../Util/data.jsx";
 const KeyFeatures = () => {
   return (
     <Fragment>
-      <div className={styles.aboutUsContainer}>
+      <div className={styles.featuresContainer}>
         <h6>Why Choose Us</h6>
         <div className={styles.sectionContainer}>
           <div className={styles.sectionContent}>

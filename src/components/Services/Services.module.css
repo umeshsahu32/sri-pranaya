@@ -44,3 +44,9 @@
   color: var(--secondary-text);
   line-height: 1.4;
 }
+
+@media (max-width: 628px) {
+  .containerItem {
+    grid-template-columns: 1fr;
+  }
+}

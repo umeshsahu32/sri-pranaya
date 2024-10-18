@@ -12,11 +12,11 @@ body {
 
 :root {
   --bg-header: #f1f1f1;
-  --primary-text: "#222121";
-  --secondary-text: "#555252";
-  --navbar-border: "#16131f";
-  --white: "#fff";
-  --input-border: "#c8c8c8";
-  --product-primary: "#5b5d77";
-  --product-secondary: "#d9dbf7";
+  --primary-text: #222121;
+  --secondary-text: #555252;
+  --navbar-border: #16131f;
+  --white: #fff;
+  --input-border: #c8c8c8;
+  --product-primary: #5b5d77;
+  --product-secondary: #d9dbf7;
 }
