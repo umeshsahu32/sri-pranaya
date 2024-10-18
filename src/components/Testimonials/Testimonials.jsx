@@ -69,7 +69,7 @@ const Testimonials = () => {
             return (
               <div key={item.id} className={styles.testimonialCard}>
                 <div className={styles.testimonialsImage}>
-                  <img src={item.avatar} />
+                  <img src={item.avatar} alt={item.name} />
                   <div className={styles.testimonialName}>
                     <h6>{item.name}</h6>
                     <span>{item.position}</span>

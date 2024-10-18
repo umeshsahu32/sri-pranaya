@@ -101,7 +101,7 @@ const Header = () => {
         <div className={styles.navbar}>
           {/* @ NAV BAR FOR DEVICE WIDTH MORE THAN 768PX (DESKTOP, LAPTOP AND TAB )*/}
           <div className={styles.navBranding}>
-            <img src={logo} alt="Icon" className={styles.icon} />
+            <img src={logo} alt="Sri Pranaya" className={styles.icon} />
           </div>
 
           <div className={styles.navMenu}>

@@ -39,7 +39,7 @@ const HeroBanners = () => {
             index === currentSlide ? styles.active : ""
           }`}
         >
-          <img src={slide.image} alt={`Slide ${index + 1}`} />
+          <img src={slide.image} alt={slide.text} />
           <div className={styles.slideText}>{slide.text}</div>
         </div>
       ))}
