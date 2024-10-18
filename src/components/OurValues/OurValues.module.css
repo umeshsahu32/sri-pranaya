@@ -32,13 +32,14 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.valueCard p:first-child {
-  font-size: 2.6rem;
-  color: rgb(100, 89, 85);
-  text-align: center;
+.valueCard img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
-.valueCard p:last-child {
+.valueCard p {
   font-size: 1.2rem;
   color: rgb(100, 89, 85);
   text-align: center;

@@ -9,6 +9,7 @@ import KeyFeatures from "./components/KeyFeatures/KeyFeatures";
 import Services from "./components/Services/Services";
 import Products from "./components/Products/Products";
 import ClientServed from "./components/ClientServed/ClientServed";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
 
@@ -30,6 +31,7 @@ function App() {
       <Services />
       <Products />
       <ClientServed />
+      <Testimonials />
       <Gallery />
       <Footer />
     </Fragment>

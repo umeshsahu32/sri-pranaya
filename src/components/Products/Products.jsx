@@ -19,11 +19,9 @@ import {
 } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { BsImageFill } from "react-icons/bs";
-import { MdEventNote } from "react-icons/md";
 import { AiFillSchedule } from "react-icons/ai";
 import { ImPriceTag } from "react-icons/im";
 import { RiAttachmentFill } from "react-icons/ri";
-import { IoMdPaper } from "react-icons/io";
 import { IoNewspaper } from "react-icons/io5";
 import MainHeading from "../MainHeading/MainHeading";
 
