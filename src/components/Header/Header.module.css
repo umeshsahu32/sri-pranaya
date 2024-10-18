@@ -1,5 +1,5 @@
 .header {
-  background-color: #f1f1f1;
+  background-color: var(--bg-header);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
   box-sizing: border-box;
@@ -45,7 +45,7 @@
 
 .navMenu a {
   text-decoration: none;
-  color: #222121;
+  color: var(--primary-text);
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
@@ -59,39 +59,12 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #16131f; /* Green color */
+  background-color: var(-navbar-border);
   transition: width 0.3s ease-in-out;
 }
 
 .navMenu a:hover::after {
   width: 100%;
-}
-
-.social_icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.social_icons a {
-  font-size: 1rem;
-  color: var(--color-white);
-  cursor: pointer;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  transition: all 0.3s ease;
-  background: var(--background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-
-.social_icons a:hover {
-  transform: scale(1.15);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .hamburger {
@@ -107,7 +80,7 @@
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  background-color: #000;
+  background-color: var(--navbar-border);
 }
 
 .hide_drawer {
@@ -173,7 +146,7 @@
   .drawerItem {
     text-decoration: none;
     background-color: #303030;
-    color: #fff;
+    color: var(--white);
     font-size: 1rem;
     padding: 20px 40px;
     border-bottom: 1px solid var(--bg-light);
@@ -185,36 +158,6 @@
 
   .drawer .avatar {
     margin-bottom: 20px;
-  }
-
-  .social_icons_mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    padding: 0 1rem;
-  }
-
-  .social_icons_mobile a {
-    font-size: 1rem;
-    color: var(--color-white);
-    cursor: pointer;
-    border-radius: 50%;
-    width: 2.8rem;
-    height: 2.8rem;
-    transition: all 0.3s ease;
-    background: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-  }
-
-  .social_icons_mobile a:hover {
-    transform: scale(1.15);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
 

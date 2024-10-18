@@ -6,7 +6,7 @@
 }
 
 .aboutUsContainer h6 {
-  color: #555252;
+  color: var(--secondary-text);
   font-size: 1.4rem;
 }
 
@@ -14,7 +14,7 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #222121;
+  color: var(--primary-text);
 }
 
 .sectionContainer {
@@ -41,7 +41,7 @@
 }
 
 .itemList {
-  background-color: #2c263f;
+  background-color: var(--navbar-border);
   padding: 1rem 1rem;
   display: flex;
   justify-content: flex-start;
@@ -51,7 +51,7 @@
 
 .itemList span {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .itemList strong {
@@ -60,7 +60,7 @@
 
 .itemList p {
   font-size: 1rem;
-  color: #fff;
+  color: var(--white);
 }
 
 @media (max-width: 1200px) {

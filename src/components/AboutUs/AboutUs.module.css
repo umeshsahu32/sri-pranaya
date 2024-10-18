@@ -9,7 +9,7 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #222121;
+  color: var(--primary-text);
 }
 
 .sectionContainer {
@@ -32,7 +32,7 @@
 }
 
 .sectionContent h6 {
-  color: #555252;
+  color: var(--secondary-text);
   font-size: 1.2rem;
   margin-bottom: -10px;
 }
@@ -40,18 +40,18 @@
 .sectionContent p:nth-child(2) {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #222121;
+  color: var(--primary-text);
 }
 
 .sectionContent p:nth-child(3) {
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #555252;
+  color: var(--secondary-text);
 }
 .sectionContent p:last-child {
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #555252;
+  color: var(--secondary-text);
 }
 
 @media (max-width: 1200px) {

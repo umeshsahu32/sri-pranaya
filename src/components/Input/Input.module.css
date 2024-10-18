@@ -7,7 +7,7 @@
   font-size: 100%;
   padding: 0.8rem;
   outline: none;
-  border: 2px solid #c8c8c8;
+  border: 2px solid var(--input-border);
   background-color: transparent;
   border-radius: 10px;
   width: 100%;
@@ -25,7 +25,7 @@
   margin-left: 0.5rem;
   pointer-events: none;
   transition: all 0.3s ease;
-  color: #646464;
+  color: var(--input-border);
 }
 
 .inputGroup :is(input:focus, input:valid) ~ label,
@@ -34,12 +34,12 @@
   margin: 0;
   margin-left: 1.3rem;
   padding: 0.4rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .inputGroup :is(input:focus, input:valid),
 .inputGroup :is(textarea:focus, textarea:valid) {
-  border-color: #9696c8;
+  border-color: var(--navbar-border);
 }
 
 .nameInput {

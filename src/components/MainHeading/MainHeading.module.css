@@ -12,12 +12,12 @@
 .mainHeading h3 {
   font-size: 2.6rem;
   margin-bottom: 20px;
-  color: #222121;
+  color: var(--primary-text);
 }
 
 .mainHeading p {
   font-size: 1.2rem;
   margin-bottom: 10px;
   text-align: center;
-  color: #555252;
+  color: var(--secondary-text);
 }
