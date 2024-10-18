@@ -1,24 +1,7 @@
 import React, { Fragment, useState } from "react";
 import logo from "../../assets/logo.png";
 import styles from "./Header.module.css";
-import { AiFillHome } from "react-icons/ai";
-import { FaHandshake } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedin,
-  FaBlogger,
-  FaInfoCircle,
-  FaClipboardList,
-  FaIndustry,
-  FaTrophy,
-} from "react-icons/fa";
-import { FaA } from "react-icons/fa6";
-import { GiLaurelCrown } from "react-icons/gi";
-import { RiCustomerService2Line } from "react-icons/ri";
-import { FiPackage } from "react-icons/fi";
+import { NavigationLinks } from "../../Util/data.jsx";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -27,74 +10,7 @@ const Header = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const NavigationLinks = [
-    {
-      id: 1,
-      path: "#",
-      text: "Home",
-      icon: <AiFillHome />,
-    },
-    {
-      id: 2,
-      path: "#about-us",
-      text: "About Us",
-      icon: <FaInfoCircle />,
-    },
-    {
-      id: 3,
-      path: "#services",
-      text: "Services",
-      icon: <FaHandshake />,
-    },
-    {
-      id: 4,
-      path: "#clients",
-      text: "Clients",
-      icon: <FiPackage />,
-    },
-    {
-      id: 5,
-      path: "#contact",
-      text: "Contact",
-      icon: <FaIndustry />,
-    },
-  ];
-
-  //   const SocialLink = [
-  //     {
-  //       id: 1,
-  //       path: "https://www.facebook.com/profile.php?id=61562755720045&mibextid=ZbWKwL",
-  //       icon: <FaFacebook />,
-  //     },
-  //     {
-  //       id: 2,
-  //       path: "https://www.instagram.com/qleads.ai?igsh=MTVzeHA3Njg2NmVvZQ==",
-  //       icon: <FaInstagram />,
-  //     },
-  //     {
-  //       id: 3,
-  //       path: "https://youtube.com/@aobqlead?si=DPL6qSpmUNcsi7p2",
-  //       icon: <FaYoutube />,
-  //     },
-  //     {
-  //       id: 4,
-  //       path: "https://www.linkedin.com/company/qlead-ai/",
-  //       icon: <FaLinkedin />,
-  //     },
-  //     {
-  //       id: 5,
-  //       path: "https://theaobway.blogspot.com",
-  //       icon: <FaBlogger />,
-  //     },
-  //     {
-  //       id: 6,
-  //       path: "https://kosin.academia.edu/PraveenKumar",
-  //       icon: <FaA />,
-  //     },
-  //   ];
-
   // @ JSX START
-
   return (
     <Fragment>
       <header className={styles.header}>
@@ -113,15 +29,7 @@ const Header = () => {
               );
             })}
           </div>
-          {/* <div className={styles.social_icons}>
-            {SocialLink.map((item) => {
-              return (
-                <Link to={item.path} key={item.id}>
-                  {item.icon}
-                </Link>
-              );
-            })}
-          </div> */}
+
           <div
             className={`${styles.hamburger} ${drawerOpen ? styles.active : ""}`}
             onClick={toggleDrawer}
@@ -150,15 +58,6 @@ const Header = () => {
                 );
               })}
             </div>
-            {/* <div className={styles.social_icons_mobile}>
-              {SocialLink.map((item) => {
-                return (
-                  <Link to={item.path} key={item.id}>
-                    {item.icon}
-                  </Link>
-                );
-              })}
-            </div> */}
           </div>
         </div>
       </header>

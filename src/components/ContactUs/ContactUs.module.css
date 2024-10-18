@@ -1,0 +1,97 @@
+.contactContainer {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 8rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.contactForm h5 {
+  font-size: 2rem;
+  color: #222221;
+}
+
+.contactForm p {
+  font-size: 1rem;
+  color: #555252;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.contactForm form {
+  width: 100%;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.mapContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 100px);
+  gap: 1rem;
+}
+
+.infoCard {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.infoCard img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.addressCard {
+  grid-row: 1/2;
+}
+
+.emailCard {
+  grid-row: 2/3;
+}
+
+.phoneCard {
+  grid-row: 3/4;
+}
+
+.map {
+  grid-row: 4/6;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.infoText h6 {
+  font-size: 1rem;
+  color: #222221;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

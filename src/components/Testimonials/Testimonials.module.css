@@ -13,40 +13,42 @@
 .testimonialCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 20px;
-  background-color: #d9dbf7;
-  padding: 2rem;
+  background-color: #ecedf3;
+  padding: 1.6rem;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .testimonialsImage {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 
 .testimonialsImage img {
-  width: 5rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   object-fit: cover;
   background-color: #5b5d77;
   border-radius: 50%;
 }
 
+.testimonialsImage span {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
 .testimonialName {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
 }
 
 .testimonialName h6 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #222221;
 }
 
@@ -55,7 +57,21 @@
   color: #555252;
 }
 
-.testimonialCard p {
+.testimonialDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.testimonialDescription span {
+  font-size: 1rem;
+  color: #222221;
+  font-weight: 700;
+}
+
+.testimonialDescription p {
   font-size: 0.9rem;
   color: #555252;
 }

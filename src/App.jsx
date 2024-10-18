@@ -10,6 +10,7 @@ import Services from "./components/Services/Services";
 import Products from "./components/Products/Products";
 import ClientServed from "./components/ClientServed/ClientServed";
 import Testimonials from "./components/Testimonials/Testimonials";
+import ContactUs from "./components/ContactUs/ContactUs";
 import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
 
@@ -32,6 +33,7 @@ function App() {
       <Products />
       <ClientServed />
       <Testimonials />
+      <ContactUs />
       <Gallery />
       <Footer />
     </Fragment>

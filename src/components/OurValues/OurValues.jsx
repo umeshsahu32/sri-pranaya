@@ -1,22 +1,8 @@
 import React, { Fragment } from "react";
 import styles from "./OurValues.module.css";
-import quality from "../../assets/values/quality.png";
-import innovation from "../../assets/values/innovation.png";
-import customerSatisfaction from "../../assets/values/customer-satisfaction.png";
-import sustainability from "../../assets/values/sustainability.png";
+import { values } from "../../Util/data.jsx";
 
 const OurValues = () => {
-  let values = [
-    { id: 1, icon: quality, title: "Quality" },
-    { id: 2, icon: innovation, title: "Innovation" },
-    {
-      id: 3,
-      icon: customerSatisfaction,
-      title: "Customer Satisfaction",
-    },
-    { id: 4, icon: sustainability, title: "Sustainability" },
-  ];
-
   return (
     <Fragment>
       <div className={styles.valuesContainer}>

@@ -1,40 +1,9 @@
 import React, { Fragment } from "react";
 import styles from "./KeyFeatures.module.css";
 import aboutUs from "../../assets/why-us.png";
-import { FaRandom, FaLeaf } from "react-icons/fa";
-import { RiComputerLine } from "react-icons/ri";
-import { GiSandsOfTime } from "react-icons/gi";
+import { keyFeaturesList } from "../../Util/data.jsx";
 
 const KeyFeatures = () => {
-  const keyFeaturesList = [
-    {
-      id: 1,
-      title: "Diverse Solutions",
-      description:
-        "From business cards to packaging, we offer a wide range of printing services.",
-      icon: <FaRandom />,
-    },
-    {
-      id: 2,
-      title: "Sustainable Practices",
-      description:
-        "Eco-friendly printing solutions to reduce environmental impact.",
-      icon: <FaLeaf />,
-    },
-    {
-      id: 3,
-      title: "Advanced Technology",
-      description: "Cutting-edge printing equipment for superior quality.",
-      icon: <RiComputerLine />,
-    },
-    {
-      id: 4,
-      title: "Reliable Service",
-      description: "On-time delivery, every time, guaranteed.",
-      icon: <GiSandsOfTime />,
-    },
-  ];
-
   return (
     <Fragment>
       <div className={styles.aboutUsContainer}>
