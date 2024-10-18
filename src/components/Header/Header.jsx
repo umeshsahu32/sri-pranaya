@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import logo from "../../assets/printer-machine.png";
+import logo from "../../assets/logo.png";
 import styles from "./Header.module.css";
 import { AiFillHome } from "react-icons/ai";
 import { FaHandshake } from "react-icons/fa6";
@@ -102,7 +102,6 @@ const Header = () => {
           {/* @ NAV BAR FOR DEVICE WIDTH MORE THAN 768PX (DESKTOP, LAPTOP AND TAB )*/}
           <div className={styles.navBranding}>
             <img src={logo} alt="Icon" className={styles.icon} />
-            <h3>Sri Pranaya</h3>
           </div>
 
           <div className={styles.navMenu}>
