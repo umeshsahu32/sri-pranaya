@@ -1,20 +1,20 @@
 import React, { Fragment } from "react";
 import styles from "./OurValues.module.css";
-import { FaCheckCircle } from "react-icons/fa";
-import { BsLightbulbFill } from "react-icons/bs";
-import { MdSentimentVerySatisfied } from "react-icons/md";
-import { GiRecycle } from "react-icons/gi";
+import quality from "../../assets/values/quality.png";
+import innovation from "../../assets/values/innovation.png";
+import customerSatisfaction from "../../assets/values/customer-satisfaction.png";
+import sustainability from "../../assets/values/sustainability.png";
 
 const OurValues = () => {
   let values = [
-    { id: 1, icon: <FaCheckCircle />, title: "Quality" },
-    { id: 2, icon: <BsLightbulbFill />, title: "Innovation" },
+    { id: 1, icon: quality, title: "Quality" },
+    { id: 2, icon: innovation, title: "Innovation" },
     {
       id: 3,
-      icon: <MdSentimentVerySatisfied />,
+      icon: customerSatisfaction,
       title: "Customer Satisfaction",
     },
-    { id: 4, icon: <GiRecycle />, title: "Sustainability" },
+    { id: 4, icon: sustainability, title: "Sustainability" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const OurValues = () => {
           {values.map((item) => {
             return (
               <div key={item.id} className={styles.valueCard}>
-                <p>{item.icon}</p>
+                <img src={item.icon} alt={item.title} />
                 <p>{item.title}</p>
               </div>
             );
