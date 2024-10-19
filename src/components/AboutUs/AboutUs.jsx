@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className={styles.aboutUsContainer} id="about-us">
         <div className={styles.sectionContainer}>
           <div className={styles.sectionImage}>
-            <img src={aboutUs} alt="About Us Image" />
+            <img src={aboutUs} alt="About Us Image" loading="lazy" />
           </div>
           <div className={styles.sectionContent}>
             <h6>About Us</h6>

@@ -6,7 +6,7 @@ import { infoCardData } from "../../Util/data.jsx";
 const InfoCard = ({ image, heading, title, style }) => {
   return (
     <div className={styles.infoCard}>
-      <img src={image} alt="Address" />
+      <img src={image} alt="Address" loading="lazy" />
       <div>
         <h6>{heading}</h6>
         <p>{title}</p>

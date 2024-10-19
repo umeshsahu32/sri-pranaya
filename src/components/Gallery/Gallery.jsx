@@ -19,6 +19,7 @@ const Gallery = () => {
                 src={item.productImage}
                 alt={item.productName}
                 className={styles.image}
+                loading="lazy"
               />
               <div className={styles.overlay}>
                 <p className={styles.text}>{item.productName}</p>

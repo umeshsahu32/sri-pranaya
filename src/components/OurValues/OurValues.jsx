@@ -13,7 +13,7 @@ const OurValues = () => {
           {values.map((item) => {
             return (
               <div key={item.id} className={styles.valueCard}>
-                <img src={item.icon} alt={item.title} />
+                <img src={item.icon} alt={item.title} loading="lazy" />
                 <p>{item.title}</p>
               </div>
             );

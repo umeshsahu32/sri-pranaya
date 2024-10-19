@@ -22,7 +22,7 @@ const HeroBanners = () => {
             index === currentSlide ? styles.active : ""
           }`}
         >
-          <img src={slide.image} alt={slide.text} />
+          <img src={slide.image} alt={slide.text} loading="lazy" />
           <div className={styles.slideText}>{slide.text}</div>
         </div>
       ))}

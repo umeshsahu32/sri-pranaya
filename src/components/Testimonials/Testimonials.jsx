@@ -14,7 +14,7 @@ const Testimonials = () => {
               <div key={item.id} className={styles.testimonialCard}>
                 <div className={styles.testimonialsImage}>
                   <div className={styles.testimonialName}>
-                    <img src={item.avatar} alt={item.name} />
+                    <img src={item.avatar} alt={item.name} loading="lazy" />
                     <h6>{item.name}</h6>
                   </div>
                   <span>{item.date}</span>

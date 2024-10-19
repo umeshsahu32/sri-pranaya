@@ -16,7 +16,12 @@ const ClientServed = () => {
           <div className={styles.imageCardContainer}>
             {clientsList.map((item, index) => {
               return (
-                <img src={item.image} alt={`Client ${index}`} key={index} />
+                <img
+                  src={item.image}
+                  alt={`Client ${index}`}
+                  key={index}
+                  loading="lazy"
+                />
               );
             })}
           </div>

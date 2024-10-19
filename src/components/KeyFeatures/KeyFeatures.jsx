@@ -25,7 +25,7 @@ const KeyFeatures = () => {
             })}
           </div>
           <div className={styles.whyUsImage}>
-            <img src={whyUs} alt="why choose us" />
+            <img src={whyUs} alt="why choose us" loading="lazy" />
           </div>
         </div>
       </div>

@@ -49,7 +49,12 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.navbar}>
           <div className={styles.navBranding}>
-            <img src={logo} alt="Sri Pranaya" className={styles.icon} />
+            <img
+              src={logo}
+              alt="Sri Pranaya"
+              className={styles.icon}
+              loading="lazy"
+            />
           </div>
 
           <div className={styles.navMenu}>
