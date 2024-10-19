@@ -15,6 +15,7 @@
 
 .inputGroup textarea {
   resize: none;
+  font-size: 1rem;
 }
 
 .inputGroup label {

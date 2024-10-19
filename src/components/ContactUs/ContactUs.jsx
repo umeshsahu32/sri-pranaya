@@ -1,6 +1,7 @@
-import React, { Fragment } from "react";
+import React, { useState } from "react";
 import styles from "./ContactUs.module.css";
 import Input from "../Input/Input.jsx";
+import SubmitButton from "../SubmitButton/SubmitButton.jsx";
 import { infoCardData } from "../../Util/data.jsx";
 
 const InfoCard = ({ image, heading, title, style }) => {
@@ -16,6 +17,54 @@ const InfoCard = ({ image, heading, title, style }) => {
 };
 
 const ContactUs = () => {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userPhone, setUserPhone] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+  const [formStatus, setFormStatus] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      name: userName,
+      email: userEmail,
+      phone: userPhone,
+      message: userMessage,
+    };
+
+    const userData = new FormData();
+
+    Object.keys(formData).forEach((key) => {
+      userData.append(key, formData[key]);
+    });
+
+    userData.append("access_key", "3f889373-c628-46d9-a226-f6fe1e6fdc45");
+
+    const object = Object.fromEntries(userData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      setFormStatus("success");
+      setUserName("");
+      setUserEmail("");
+      setUserPhone("");
+      setUserMessage("");
+    } else {
+      console.log("Error", res);
+      setFormStatus("fail");
+    }
+  };
+
   return (
     <section id="contact-us">
       <div className={styles.contactContainer}>
@@ -29,11 +78,50 @@ const ContactUs = () => {
                 personalized solutions that fit your needs and budget.
               </p>
             </div>
-            <form className={styles.inputs}>
-              <Input type="text" label="Full Name" id="name" style="fullName" />
-              <Input type="email" label="Email" id="name" style="email" />
-              <Input type="number" label="phone" id="name" style="phone" />
-              <Input type="text" label="Message" id="name" style="message" />
+            <form className={styles.inputs} onSubmit={onSubmit}>
+              <Input
+                type="text"
+                label="Full Name"
+                id="name"
+                style="fullName"
+                value={userName}
+                onChange={setUserName}
+              />
+              <Input
+                type="email"
+                label="Email"
+                id="name"
+                style="email"
+                value={userEmail}
+                onChange={setUserEmail}
+              />
+              <Input
+                type="number"
+                label="phone"
+                id="name"
+                style="phone"
+                value={userPhone}
+                onChange={setUserPhone}
+              />
+              <Input
+                type="text"
+                label="Message"
+                id="name"
+                style="message"
+                value={userMessage}
+                onChange={setUserMessage}
+              />
+              <SubmitButton type="submit" text="Submit" />
+              {formStatus === "success" && (
+                <p className={styles.successText}>
+                  Form Submitted Successfully !!!
+                </p>
+              )}
+              {formStatus === "fail" && (
+                <p className={styles.errorText}>
+                  Sorry. Something went wrong. Please try again.
+                </p>
+              )}
             </form>
           </div>
           <div className={styles.addressContainer}>
