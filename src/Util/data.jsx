@@ -20,8 +20,12 @@ import {
   FaRegNewspaper,
 } from "react-icons/fa";
 import { FiPackage } from "react-icons/fi";
-import { RiComputerLine, RiAttachmentFill } from "react-icons/ri";
-import { GiSandsOfTime, GiNotebook } from "react-icons/gi";
+import {
+  RiAttachmentFill,
+  RiComputerFill,
+  RiTimerFlashFill,
+} from "react-icons/ri";
+import { GiNotebook } from "react-icons/gi";
 import { BsImageFill } from "react-icons/bs";
 import { AiFillSchedule, AiFillHome } from "react-icons/ai";
 import { ImPriceTag } from "react-icons/im";
@@ -171,13 +175,13 @@ export const keyFeaturesList = [
     id: 3,
     title: "Advanced Technology",
     description: "Cutting-edge printing equipment for superior quality.",
-    icon: <RiComputerLine />,
+    icon: <RiComputerFill />,
   },
   {
     id: 4,
     title: "Reliable Service",
     description: "On-time delivery, every time, guaranteed.",
-    icon: <GiSandsOfTime />,
+    icon: <RiTimerFlashFill />,
   },
 ];
 

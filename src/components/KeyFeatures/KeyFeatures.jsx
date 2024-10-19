@@ -1,18 +1,20 @@
 import React, { Fragment } from "react";
 import styles from "./KeyFeatures.module.css";
-import aboutUs from "../../assets/why-us.png";
+import whyUs from "../../assets/why-us.png";
 import { keyFeaturesList } from "../../Util/data.jsx";
 
 const KeyFeatures = () => {
   return (
     <Fragment>
-      <div className={styles.featuresContainer}>
-        <h6>Why Choose Us</h6>
-        <div className={styles.sectionContainer}>
-          <div className={styles.sectionContent}>
+      <div className={styles.featureContainer}>
+        <div className={styles.sectionHead}>
+          <h5>Why Choose Us</h5>
+        </div>
+        <div className={styles.featuresListContainer}>
+          <div className={styles.featuresList}>
             {keyFeaturesList.map((item) => {
               return (
-                <div className={styles.itemList}>
+                <div key={item.id} className={styles.featuresItem}>
                   <span>{item.icon}</span>
                   <p>
                     <strong>{item.title}: </strong>
@@ -22,8 +24,8 @@ const KeyFeatures = () => {
               );
             })}
           </div>
-          <div className={styles.sectionImage}>
-            <img src={aboutUs} alt="About Us Image" />
+          <div className={styles.whyUsImage}>
+            <img src={whyUs} alt="why choose us" />
           </div>
         </div>
       </div>

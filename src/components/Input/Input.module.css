@@ -26,6 +26,7 @@
   pointer-events: none;
   transition: all 0.3s ease;
   color: var(--product-primary);
+  font-weight: 500;
 }
 
 .inputGroup :is(input:focus, input:valid) ~ label,
@@ -40,34 +41,4 @@
 .inputGroup :is(input:focus, input:valid),
 .inputGroup :is(textarea:focus, textarea:valid) {
   border-color: var(--product-primary);
-}
-
-.nameInput {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  height: 3rem;
-}
-
-.emailInput {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  height: 3rem;
-}
-
-.phoneInput {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  height: 3rem;
-}
-
-.subjectInput {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  height: 3rem;
-}
-
-.messageInput {
-  grid-column: 1/-1;
-  grid-row: 3/5;
-  resize: none;
 }

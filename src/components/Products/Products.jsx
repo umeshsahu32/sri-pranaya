@@ -6,7 +6,9 @@ import { productList } from "../../Util/data.jsx";
 const Products = () => {
   return (
     <div className={styles.productContainer}>
-      <MainHeading heading="Our Products" paragraph1="" paragraph2="" />
+      <div className={styles.sectionHead}>
+        <h5>Our Product</h5>
+      </div>
       <div className={styles.productsList}>
         {productList.map((item) => {
           return (
