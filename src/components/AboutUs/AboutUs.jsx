@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import styles from "./AboutUs.module.css";
-import aboutUs from "../../assets/aboutImage.png";
+import aboutUs from "../../assets/favicon.png";
 
 const AboutUs = () => {
   return (
     <Fragment>
-      <div className={styles.aboutUsContainer}>
+      <div className={styles.aboutUsContainer} id="about-us">
         <div className={styles.sectionContainer}>
           <div className={styles.sectionImage}>
             <img src={aboutUs} alt="About Us Image" />

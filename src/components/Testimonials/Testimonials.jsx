@@ -6,8 +6,8 @@ import { testimonials } from "../../Util/data.jsx";
 const Testimonials = () => {
   return (
     <Fragment>
+      <MainHeading heading="Testimonials" paragraph1="" />
       <div className={styles.testimonialContainer}>
-        <MainHeading heading="Testimonials" />
         <div className={styles.testimonialGrid}>
           {testimonials.map((item) => {
             return (

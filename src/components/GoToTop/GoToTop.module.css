@@ -1,0 +1,33 @@
+.goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 1;
+  z-index: 1000;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--product-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goToTop:hover {
+  background-color: #444769;
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: var(--product-primary);
+  font-weight: 700;
+}
+
+.goToTop:hover {
+  background-color: #444769;
+}
+
+.goToTop:hover .icon {
+  color: #fff;
+}

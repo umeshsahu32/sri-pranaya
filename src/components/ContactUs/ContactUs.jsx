@@ -17,7 +17,7 @@ const InfoCard = ({ image, heading, title, style }) => {
 
 const ContactUs = () => {
   return (
-    <Fragment>
+    <section id="contact-us">
       <div className={styles.contactContainer}>
         <div className={styles.contact}>
           <div className={styles.inputContainer}>
@@ -58,7 +58,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 };
 

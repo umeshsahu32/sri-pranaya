@@ -5,14 +5,14 @@ import { serviceList } from "../../Util/data.jsx";
 
 const Services = () => {
   return (
-    <Fragment>
-      <div className={styles.servicesContainer}>
-        <MainHeading
-          heading="Our Services"
-          paragraph1="Customized Printing Solutions Tailored for You"
-          paragraph2=" We offer a comprehensive range of printing services designed to meet
+    <section id="our-services">
+      <MainHeading
+        heading="Our Services"
+        paragraph1="Customized Printing Solutions Tailored for You"
+        paragraph2=" We offer a comprehensive range of printing services designed to meet
             the demands of businesses and individuals alike."
-        />
+      />
+      <div className={styles.servicesContainer}>
         <div className={styles.containerItem}>
           {serviceList.map((item) => {
             return (
@@ -25,7 +25,7 @@ const Services = () => {
           })}
         </div>
       </div>
-    </Fragment>
+    </section>
   );
 };
 

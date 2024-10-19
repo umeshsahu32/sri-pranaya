@@ -1,14 +1,14 @@
 .valuesContainer {
   max-width: 1200px;
-  margin: 8rem auto;
+  margin: 4rem auto;
   padding: 0 4rem;
 }
 
-.sectionHeading {
+.sectionHeading h6 {
   text-align: center;
-  font-size: 4rem;
   color: var(--primary-text);
   margin-bottom: 3rem;
+  font-size: 2.6rem;
 }
 
 .valueContainer {
@@ -43,6 +43,15 @@
 }
 
 @media (max-width: 992px) {
+  .valuesContainer {
+    padding: 0 2rem;
+  }
+
+  .sectionHeading h6 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
   .valueContainer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -51,5 +60,16 @@
 @media (max-width: 628px) {
   .valueContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 528px) {
+  .valuesContainer {
+    padding: 0 1.6rem;
+    margin: 2rem auto;
+  }
+
+  .sectionHeading h6 {
+    font-size: 1.6rem;
   }
 }

@@ -12,7 +12,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-top: 4rem;
 }
 
 .serviceItem {
@@ -45,8 +44,25 @@
   line-height: 1.4;
 }
 
+@media (max-width: 992px) {
+  .servicesContainer {
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  .containerItem {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 628px) {
   .containerItem {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 528px) {
+  .containerItem {
+    margin-top: 1rem;
   }
 }

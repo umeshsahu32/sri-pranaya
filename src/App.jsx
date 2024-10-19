@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
+import GoToTop from "./components/GoToTop/GoToTop";
 
 function App() {
   let title = "Quality Printing for Every Need";
@@ -35,7 +36,9 @@ function App() {
       <Testimonials />
       <ContactUs />
       <Gallery />
+
       <Footer />
+      <GoToTop />
     </Fragment>
   );
 }

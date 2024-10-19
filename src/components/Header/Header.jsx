@@ -1,33 +1,63 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
 import styles from "./Header.module.css";
 import { NavigationLinks } from "../../Util/data.jsx";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(0);
 
-  const toggleDrawer = () => {
+  useEffect(() => {
+    const updateHeaderHeight = () => {
+      const header = document.querySelector(`.${styles.header}`);
+      if (header) {
+        setHeaderHeight(header.offsetHeight);
+      }
+    };
+
+    updateHeaderHeight();
+    window.addEventListener("resize", updateHeaderHeight);
+
+    return () => window.removeEventListener("resize", updateHeaderHeight);
+  }, []);
+
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const sectionId = event.currentTarget.getAttribute("href").slice(1);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      let sectionTop =
+        section.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+      sectionTop = sectionTop - 60;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const toggleDrawer = (event) => {
+    if (event.currentTarget.getAttribute("href")) {
+      scrollToSection(event);
+    }
     setDrawerOpen(!drawerOpen);
   };
 
-  // @ JSX START
   return (
     <Fragment>
       <header className={styles.header}>
         <div className={styles.navbar}>
-          {/* @ NAV BAR FOR DEVICE WIDTH MORE THAN 768PX (DESKTOP, LAPTOP AND TAB )*/}
           <div className={styles.navBranding}>
             <img src={logo} alt="Sri Pranaya" className={styles.icon} />
           </div>
 
           <div className={styles.navMenu}>
-            {NavigationLinks.map((item) => {
-              return (
-                <a href="#" key={item.id} exact>
-                  {item.text}
-                </a>
-              );
-            })}
+            {NavigationLinks.map((item) => (
+              <a href={item.path} key={item.id} onClick={scrollToSection}>
+                {item.text}
+              </a>
+            ))}
           </div>
 
           <div
@@ -38,25 +68,23 @@ const Header = () => {
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
           </div>
-          {/* NAV BAR FOR DEVICE WIDTH LESS THAN 768PX (MOBILE )*/}
+
           <div
             className={`${styles.drawer} ${styles.hide_drawer} ${
               drawerOpen ? styles.open : ""
             }`}
           >
             <div className={styles.drawerContent}>
-              {NavigationLinks.map((item) => {
-                return (
-                  <a
-                    href="#"
-                    className={styles.drawerItem}
-                    key={item.id}
-                    onClick={toggleDrawer}
-                  >
-                    {item.icon}&nbsp;&nbsp;&nbsp;{item.text}
-                  </a>
-                );
-              })}
+              {NavigationLinks.map((item) => (
+                <a
+                  href={item.path}
+                  className={styles.drawerItem}
+                  key={item.id}
+                  onClick={toggleDrawer}
+                >
+                  {item.icon}&nbsp;&nbsp;&nbsp;{item.text}
+                </a>
+              ))}
             </div>
           </div>
         </div>

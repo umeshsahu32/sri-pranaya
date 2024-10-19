@@ -21,3 +21,33 @@
   text-align: center;
   color: var(--secondary-text);
 }
+
+@media (max-width: 992px) {
+  .mainHeading {
+    padding: 0 2rem;
+  }
+
+  .mainHeading h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .mainHeading p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .mainHeading {
+    padding: 0 1.6rem;
+    margin: 2rem auto;
+  }
+
+  .mainHeading h3 {
+    font-size: 1.6rem;
+  }
+
+  .mainHeading p {
+    font-size: 0.9rem;
+  }
+}

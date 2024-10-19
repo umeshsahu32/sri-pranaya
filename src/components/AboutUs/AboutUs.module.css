@@ -1,7 +1,6 @@
 .aboutUsContainer {
   max-width: 1200px;
   margin: 4rem auto;
-  margin-top: 8rem;
   padding: 0 4rem;
 }
 
@@ -55,11 +54,56 @@
 }
 
 @media (max-width: 992px) {
+  .aboutUsContainer {
+    padding: 0 2rem;
+  }
+
   .sectionContainer {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .sectionImage {
     order: 2;
+  }
+
+  .sectionContent h6 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .sectionContent p:nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .sectionContent p:nth-child(3),
+  .sectionContent p:last-child {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .aboutUsContainer {
+    padding: 0 1.6rem;
+    margin: 2rem auto;
+  }
+
+  .sectionContent h6 {
+    font-size: 1rem;
+  }
+
+  .sectionContent p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+  .sectionContent p:nth-child(3),
+  .sectionContent p:last-child {
+    font-size: 0.9rem;
+  }
+
+  .sectionImage img {
+    width: 15rem;
+    height: 15rem;
   }
 }

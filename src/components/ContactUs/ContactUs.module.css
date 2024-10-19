@@ -1,6 +1,6 @@
 .contactContainer {
   max-width: 1200px;
-  margin: 8rem auto 4rem auto;
+  margin: 8rem auto 8rem auto;
   padding: 0 4rem;
 }
 
@@ -78,6 +78,29 @@
   border-radius: 10px;
   border: 1px solid var(--input-border);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media (max-width: 992px) {
+  .contactContainer {
+    margin: 2rem auto 4rem auto;
+    padding: 0 2rem;
+  }
+
+  .headingText h5 {
+    text-align: center;
+  }
+
+  .headingText p {
+    text-align: center;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .addressContainer iframe {
+    height: 320px;
+  }
 }
 
 @media (max-width: 728px) {

@@ -18,6 +18,8 @@ import {
   FaBookOpen,
   FaFolderOpen,
   FaRegNewspaper,
+  FaCogs,
+  FaUsers,
 } from "react-icons/fa";
 import { FiPackage } from "react-icons/fi";
 import {
@@ -95,12 +97,12 @@ import product10 from "../assets/products/product10.jpg";
 
 // HEADER LIST
 export const NavigationLinks = [
-  {
-    id: 1,
-    path: "#",
-    text: "Home",
-    icon: <AiFillHome />,
-  },
+  // {
+  //   id: 1,
+  //   path: "#home",
+  //   text: "Home",
+  //   icon: <AiFillHome />,
+  // },
   {
     id: 2,
     path: "#about-us",
@@ -109,21 +111,21 @@ export const NavigationLinks = [
   },
   {
     id: 3,
-    path: "#services",
+    path: "#our-services",
     text: "Services",
-    icon: <FaHandshake />,
+    icon: <FaCogs />,
   },
   {
     id: 4,
-    path: "#clients",
+    path: "#our-clients",
     text: "Clients",
-    icon: <FiPackage />,
+    icon: <FaUsers />,
   },
   {
     id: 5,
-    path: "#contact",
+    path: "#contact-us",
     text: "Contact",
-    icon: <FaIndustry />,
+    icon: <FaEnvelope />,
   },
 ];
 
@@ -251,8 +253,8 @@ export const productList = [
   { id: 16, icon: <FaStickyNote />, title: "Stickers" },
   { id: 17, icon: <FaTag />, title: "Labels" },
   { id: 18, icon: <FaClipboardList />, title: "Annual Reports" },
-  { id: 19, icon: <FaFolderOpen />, title: "Presentation Folders" },
-  { id: 20, icon: <ImPriceTag />, title: "Self Adhesive Labels" },
+  // { id: 19, icon: <FaFolderOpen />, title: "Presentation Folders" },
+  // { id: 20, icon: <ImPriceTag />, title: "Self Adhesive Labels" },
 ];
 
 // CLIENTS LIST
