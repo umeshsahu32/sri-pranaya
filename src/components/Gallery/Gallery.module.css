@@ -43,7 +43,7 @@
 }
 
 .imageContainer:hover .image {
-  transform: scale(1.1);
+  transform: scale(1.09);
 }
 
 .imageContainer:hover .overlay {
