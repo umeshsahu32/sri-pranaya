@@ -30,8 +30,8 @@
 }
 
 .valueCard img {
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
   object-fit: contain;
   margin-bottom: 15px;
 }

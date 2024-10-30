@@ -5,6 +5,7 @@ import HeroBanners from "./components/HeroBanners/HeroBanners";
 import MainHeading from "./components/MainHeading/MainHeading";
 import Footer from "./components/Footer/Footer";
 import GoToTop from "./components/GoToTop/GoToTop";
+import Loader from "./components/Loader/Loader";
 
 const LazyLoadComponent = lazy(() =>
   import("./Util/LazyLoadComponent/LazyLoadComponent")
@@ -37,7 +38,7 @@ const App = () => {
       <HeroBanners />
       <MainHeading heading={title} paragraph1={para1} paragraph2={para2} />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <LazyLoadComponent>
           <AboutUs />
         </LazyLoadComponent>

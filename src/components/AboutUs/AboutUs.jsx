@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styles from "./AboutUs.module.css";
-import aboutUs from "../../assets/favicon.png";
+import aboutUs from "../../assets/values/about-us.jpg";
 
 const AboutUs = () => {
   return (

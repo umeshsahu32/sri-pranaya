@@ -21,9 +21,9 @@ const Gallery = () => {
                 className={styles.image}
                 loading="lazy"
               />
-              <div className={styles.overlay}>
+              {/* <div className={styles.overlay}>
                 <p className={styles.text}>{item.productName}</p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

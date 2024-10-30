@@ -1,7 +1,6 @@
 // REACT ICONS
 import {
   FaInfoCircle,
-  FaIndustry,
   FaRandom,
   FaLeaf,
   FaBook,
@@ -16,12 +15,12 @@ import {
   FaEnvelope,
   FaListAlt,
   FaBookOpen,
-  FaFolderOpen,
   FaRegNewspaper,
   FaCogs,
   FaUsers,
+  FaTshirt,
+  FaPrint,
 } from "react-icons/fa";
-import { FiPackage } from "react-icons/fi";
 import {
   RiAttachmentFill,
   RiComputerFill,
@@ -29,29 +28,27 @@ import {
 } from "react-icons/ri";
 import { GiNotebook } from "react-icons/gi";
 import { BsImageFill } from "react-icons/bs";
-import { AiFillSchedule, AiFillHome } from "react-icons/ai";
-import { ImPriceTag } from "react-icons/im";
+import { AiFillSchedule } from "react-icons/ai";
 import { IoNewspaper } from "react-icons/io5";
-import { FaHandshake } from "react-icons/fa6";
 
 // BANNER IMAGES
-import banner1 from "../assets/banners/banner1.avif";
-import banner2 from "../assets/banners/banner2.avif";
-import banner3 from "../assets/banners/banner3.avif";
+import banner1 from "../assets/banners/banner1.jpg";
+import banner2 from "../assets/banners/banner2.jpg";
+import banner3 from "../assets/banners/banner3.jpg";
 
 // OUR VALUES IMAGES
-import quality from "../assets/values/quality.png";
-import innovation from "../assets/values/innovation.png";
-import customerSatisfaction from "../assets/values/customer-satisfaction.png";
-import sustainability from "../assets/values/sustainability.png";
+import quality from "../assets/values/Quality.jpg";
+import innovation from "../assets/values/Innovation.jpg";
+import customerSatisfaction from "../assets/values/Customer-satisfaction.jpg";
+import sustainability from "../assets/values/Sustainability.jpg";
 
 // OUR SERVICES IMAGES
-import service1 from "../assets/printer.png";
-import service2 from "../assets/digital-printing.png";
-import service3 from "../assets/packaging.png";
-import service4 from "../assets/print.png";
-import service5 from "../assets/promotion.png";
-import service6 from "../assets/branding.png";
+import service1 from "../assets/values/Offset-Printing.jpg";
+import service2 from "../assets/values/Digital-Printing.jpg";
+import service3 from "../assets/values/Packages.jpg";
+import service4 from "../assets/values/Large-formate-printing.jpg";
+import service5 from "../assets/values/Promotional-Products.jpg";
+import service6 from "../assets/values/Corporate-Stationary.jpg";
 
 // CLIENT SECTION IMAGES
 import client1 from "../assets/client-image/img1.jpg";
@@ -71,12 +68,12 @@ import client14 from "../assets/client-image/img14.jpg";
 import client15 from "../assets/client-image/img15.jpg";
 
 // TESTIMONIALS IMAGES
-import avatar1 from "../assets/testimonials/avatar1.png";
-import avatar2 from "../assets/testimonials/avatar2.png";
-import avatar3 from "../assets/testimonials/avatar3.png";
-import avatar4 from "../assets/testimonials/avatar4.png";
-import avatar5 from "../assets/testimonials/avatar5.png";
-import avatar6 from "../assets/testimonials/avatar6.png";
+import avatar1 from "../assets/testimonials/brand-logo-1.png";
+import avatar2 from "../assets/testimonials/brand-logo-2.png";
+import avatar3 from "../assets/testimonials/brand-logo-3.png";
+import avatar4 from "../assets/testimonials/brand-logo-4.png";
+import avatar5 from "../assets/testimonials/brand-logo-5.png";
+import avatar6 from "../assets/testimonials/brand-logo-6.png";
 
 // CONTACT US SECTION IMAGES
 import address from "../assets/location.png";
@@ -94,6 +91,12 @@ import product7 from "../assets/products/product7.jpg";
 import product8 from "../assets/products/product8.jpg";
 import product9 from "../assets/products/product9.jpg";
 import product10 from "../assets/products/product10.jpg";
+import product11 from "../assets/products/product11.jpg";
+import product12 from "../assets/products/product12.jpg";
+import product13 from "../assets/products/product13.jpg";
+import product14 from "../assets/products/product14.jpg";
+import product15 from "../assets/products/product15.jpg";
+import product16 from "../assets/products/product16.jpg";
 
 // HEADER LIST
 export const NavigationLinks = [
@@ -253,8 +256,8 @@ export const productList = [
   { id: 16, icon: <FaStickyNote />, title: "Stickers" },
   { id: 17, icon: <FaTag />, title: "Labels" },
   { id: 18, icon: <FaClipboardList />, title: "Annual Reports" },
-  // { id: 19, icon: <FaFolderOpen />, title: "Presentation Folders" },
-  // { id: 20, icon: <ImPriceTag />, title: "Self Adhesive Labels" },
+  { id: 19, icon: <FaTshirt />, title: "Cloth Banner" },
+  { id: 20, icon: <FaPrint />, title: "Flex Printing" },
 ];
 
 // CLIENTS LIST
@@ -376,6 +379,12 @@ export const galleryImages = [
   { id: 6, productImage: product6, productName: "Product 6" },
   { id: 7, productImage: product7, productName: "Product 7" },
   { id: 8, productImage: product8, productName: "Product 8" },
-  { id: 9, productImage: product9, productName: "Product 9" },
+  // { id: 9, productImage: product9, productName: "Product 9" },
   { id: 10, productImage: product10, productName: "Product 10" },
+  { id: 11, productImage: product11, productName: "Product 11" },
+  { id: 12, productImage: product12, productName: "Product 12" },
+  { id: 13, productImage: product13, productName: "Product 13" },
+  { id: 14, productImage: product14, productName: "Product 14" },
+  { id: 15, productImage: product15, productName: "Product 15" },
+  { id: 16, productImage: product16, productName: "Product 16" },
 ];

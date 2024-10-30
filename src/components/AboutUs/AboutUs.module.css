@@ -15,12 +15,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  gap: 12rem;
+  gap: 6rem;
 }
 
 .sectionImage img {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   object-fit: cover;
 }
 
