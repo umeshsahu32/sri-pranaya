@@ -75,7 +75,7 @@ import avatar4 from "../assets/testimonials/brand-logo-4.png";
 import avatar5 from "../assets/testimonials/brand-logo-5.png";
 import avatar6 from "../assets/testimonials/brand-logo-6.png";
 
-// CONTACT US SECTION IMAGES
+// CONTACT US SECTION IMAGESsss
 import address from "../assets/location.png";
 import mail from "../assets/mail.png";
 import phone from "../assets/phone-call.png";
