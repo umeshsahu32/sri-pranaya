@@ -39,7 +39,7 @@ import banner3 from "../assets/banners/banner3.jpg";
 // OUR VALUES IMAGES
 import quality from "../assets/values/Quality.jpg";
 import innovation from "../assets/values/Innovation.jpg";
-import customerSatisfaction from "../assets/values/Customer-satisfaction.jpg";
+import customerSatisfaction from "../assets/values/Customer-Satisfaction.jpg";
 import sustainability from "../assets/values/Sustainability.jpg";
 
 // OUR SERVICES IMAGES
