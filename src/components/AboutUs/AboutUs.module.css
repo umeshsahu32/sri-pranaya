@@ -18,10 +18,19 @@
   gap: 6rem;
 }
 
-.sectionImage img {
-  width: 25rem;
-  height: 25rem;
+.sectionImage {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  width: 25rem !important;
+  height: 25rem !important;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.sectionImage:hover .image {
+  transform: scale(1.05);
 }
 
 .sectionContent {

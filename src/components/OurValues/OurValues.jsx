@@ -2,6 +2,17 @@ import React, { Fragment } from "react";
 import styles from "./OurValues.module.css";
 import { values } from "../../Util/data.jsx";
 
+const BackgroundTextOverlay = ({ backgroundImage, overlayText }) => {
+  return (
+    <div
+      className={styles.container}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className={styles.textOverlay}>{overlayText}</div>
+    </div>
+  );
+};
+
 const OurValues = () => {
   return (
     <Fragment>
@@ -12,10 +23,11 @@ const OurValues = () => {
         <div className={styles.valueContainer}>
           {values.map((item) => {
             return (
-              <div key={item.id} className={styles.valueCard}>
-                <img src={item.icon} alt={item.title} loading="lazy" />
-                <p>{item.title}</p>
-              </div>
+              <BackgroundTextOverlay
+                key={item.id}
+                backgroundImage={item.icon}
+                overlayText={item.title}
+              />
             );
           })}
         </div>

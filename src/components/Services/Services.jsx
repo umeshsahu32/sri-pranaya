@@ -17,8 +17,13 @@ const Services = () => {
           {serviceList.map((item) => {
             return (
               <div key={item.id} className={styles.serviceItem}>
-                <div className={styles.serviceImage}>
-                  <img src={item.image} alt={item.title} loading="lazy" />
+                <div className={styles.serviceImageContainer}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className={styles.serviceImage}
+                  />
                 </div>
                 <div className={styles.serviceInfo}>
                   <h4>{item.title}</h4>
