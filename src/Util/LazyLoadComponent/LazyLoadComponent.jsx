@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import styles from "./LazyLoad.module.css";
 
 const LazyLoadComponent = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,13 @@ const LazyLoadComponent = ({ children }) => {
 
   return (
     <div ref={ref}>
-      {isVisible ? children : <div style={{ height: "100px" }}>Loading...</div>}
+      {isVisible ? (
+        children
+      ) : (
+        <div className={styles.container} style={{ height: "100px" }}>
+          Loading...
+        </div>
+      )}
     </div>
   );
 };

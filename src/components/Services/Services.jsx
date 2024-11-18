@@ -17,14 +17,12 @@ const Services = () => {
           {serviceList.map((item) => {
             return (
               <div key={item.id} className={styles.serviceItem}>
-                <div className={styles.serviceImageContainer}>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    loading="lazy"
-                    className={styles.serviceImage}
-                  />
-                </div>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  className={styles.serviceImage}
+                />
                 <div className={styles.serviceInfo}>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>

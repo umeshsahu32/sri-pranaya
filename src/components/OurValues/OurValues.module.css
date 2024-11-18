@@ -76,7 +76,7 @@
 
 .container {
   position: relative;
-  width: 300px; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   height: 200px; /* Adjust height as needed */
   background-size: cover;
   background-position: center;

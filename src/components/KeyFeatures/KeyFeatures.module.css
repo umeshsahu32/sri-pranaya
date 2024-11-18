@@ -18,6 +18,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 2rem;
+  place-items: center;
 }
 
 .featuresList {
@@ -36,6 +37,33 @@
   color: var(--white);
 }
 
+.listItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--product-primary);
+  padding: 0 1rem;
+  color: var(--white);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* background: white; */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.listContainer {
+  padding: 1rem;
+}
+
 .featuresItem span {
   font-size: 1.2rem;
 }
@@ -44,6 +72,7 @@
   width: 20rem;
   height: 20rem;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
